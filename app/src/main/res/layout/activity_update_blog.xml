@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateBlog">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="10dp"
+        android:text="Update Blog!"
+        android:textColor="#24282C"
+        android:textSize="35dp"
+        android:fontFamily="@font/urbanist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/lnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/txtTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/cus_edittext"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Enter your title"
+            android:inputType="text"
+            android:padding="12dp"
+            android:paddingStart="10pt"
+            android:paddingEnd="20pt" />
+
+        <EditText
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Enter your content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/cus_edittext"
+            android:minLines="12"
+            android:maxLines="12"
+            android:padding="12dp"
+            android:gravity="top"
+            android:paddingStart="10pt"
+            android:paddingEnd="20pt" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btAddBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_btn"
+        android:text="Update"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/lnLayout"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rectangle_btn_1"
+        android:text="Cancel"
+        android:textColor="#1E232C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAddBlog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

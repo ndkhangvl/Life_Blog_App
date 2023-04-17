@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397987236795",
+    "firebase_url": "https://liftblog-6ed45-default-rtdb.firebaseio.com",
+    "project_id": "liftblog-6ed45",
+    "storage_bucket": "liftblog-6ed45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397987236795:android:fc2fed4549f0a738b7529e",
+        "android_client_info": {
+          "package_name": "com.example.bloglife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397987236795-ijo2s8brrea50v9a8cl8eoi74img7tdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcSzqr7jk2maSMQ99aYxgCVchly0WETjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397987236795-ijo2s8brrea50v9a8cl8eoi74img7tdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

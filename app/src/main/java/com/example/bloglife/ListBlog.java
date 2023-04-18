@@ -158,6 +158,7 @@ public class ListBlog extends AppCompatActivity {
         databaseReference.orderByKey().addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                list.clear();
                 List<DataSnapshot> snapshotList = new ArrayList<>();
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
 
